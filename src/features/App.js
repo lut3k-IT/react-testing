@@ -1,5 +1,5 @@
 import style from './App.module.scss';
-import { Redux, Home, ReduxToolkit } from 'features';
+import { Redux, Home, ReduxToolkit, Searchbar } from 'features';
 import { Route, Routes } from 'react-router';
 import { Link } from 'react-router-dom';
 
@@ -17,12 +17,16 @@ export default function App() {
           <li>
             <Link to='/redux-toolkit'>Redux-Toolkit</Link>
           </li>
+          <li>
+            <Link to='/searchbar'>Searchbar</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/redux' element={<Redux />} />
         <Route path='/redux-toolkit' element={<ReduxToolkit />} />
+        <Route path='/searchbar' element={<Searchbar />} />
       </Routes>
     </>
   );
