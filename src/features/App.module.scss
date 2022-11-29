@@ -1,5 +1,10 @@
-.container {
-  width: 100%;
-  min-height: 100vh;
-  background-color: rgb(30, 40, 40);
+.navigation {
+  display: flex;
+  gap: 1rem;
+  background-color: rgb(67, 77, 82);
+  padding: 1rem 2rem;
+}
+
+.pageContainer {
+  padding: 2rem;
 }

@@ -1,1 +1,1 @@
-// a list of the components
+export { default as Page } from './Page';
