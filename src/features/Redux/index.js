@@ -1,6 +1,9 @@
 import { Page } from 'components';
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 export default function Redux() {
-  return <Page>Redux</Page>;
+  const account = useSelector(state => state.account);
+
+  return <Page>Account value: {account}</Page>;
 }

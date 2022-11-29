@@ -1,3 +1,5 @@
+import { Page } from 'components';
+
 export default function ReduxToolkit() {
-  return <div>ReduxToolkit</div>;
+  return <Page>ReduxToolkit</Page>;
 }
