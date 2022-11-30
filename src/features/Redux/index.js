@@ -8,14 +8,18 @@ export default function Redux() {
   const account = useSelector(state => state.account);
   const dispatch = useDispatch();
 
-  const { depositMoney, withdrawMoney } = bindActionCreators(actions, dispatch);
+  const { depositMoney, withdrawMoney, interest } = bindActionCreators(
+    actions,
+    dispatch
+  );
 
   return (
     <Page>
-      <h1>{account}</h1>
+      <h1>$ {account.toFixed(2)}</h1>
       <div style={{ display: 'flex', gap: '1rem' }}>
         <button onClick={() => depositMoney(1000)}>Deposit</button>
         <button onClick={() => withdrawMoney(1000)}>Withdraw</button>
+        <button onClick={() => interest(1000)}>Interest (2%)</button>
       </div>
     </Page>
   );

@@ -15,3 +15,11 @@ export const withdrawMoney = amount => {
     });
   };
 };
+
+export const interest = () => {
+  return dispatch => {
+    dispatch({
+      type: 'interest',
+    });
+  };
+};
