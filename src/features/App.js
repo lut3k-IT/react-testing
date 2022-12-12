@@ -1,5 +1,5 @@
 import style from './App.module.scss';
-import { Redux, Home, ReduxToolkit, Searchbar } from 'features';
+import { Redux, Home, ReduxToolkit, Searchbar, TooltipPage } from 'features';
 import { Route, Routes } from 'react-router';
 import { Link } from 'react-router-dom';
 
@@ -20,6 +20,9 @@ export default function App() {
           <li>
             <Link to='/searchbar'>Searchbar</Link>
           </li>
+          <li>
+            <Link to='/tooltip-mui'>Tooltip MUI</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -27,6 +30,7 @@ export default function App() {
         <Route path='/redux' element={<Redux />} />
         <Route path='/redux-toolkit' element={<ReduxToolkit />} />
         <Route path='/searchbar' element={<Searchbar />} />
+        <Route path='/tooltip-mui' element={<TooltipPage />} />
       </Routes>
     </>
   );

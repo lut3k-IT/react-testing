@@ -1,1 +1,5 @@
-export { default as Page } from './Page';
+/* ---------------------------------- hooks --------------------------------- */
+export { default as TooltipMui } from './layout/TooltipMui';
+
+/* --------------------------------- layout --------------------------------- */
+export { default as Page } from './layout/PageStyle';
