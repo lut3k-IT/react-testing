@@ -7,27 +7,25 @@ export default function TooltipPage() {
     <>
       <h1>Heading</h1>
       <p>Paragraph ...</p>
-      <a href='https://google.com'>A link</a>
+      <a href='https://google.com'>A link to google</a>
     </>
   );
 
   return (
     <Page>
-      <TooltipMui title={'Click this button ⚠️'}>
-        <IconButton>
-          <DeleteIcon />
-        </IconButton>
-      </TooltipMui>
+      <div style={{ display: 'flex', gap: '1rem' }}>
+        <TooltipMui title={'Click this button 🎯'} placement='right'>
+          <IconButton>
+            <DeleteIcon />
+          </IconButton>
+        </TooltipMui>
 
-      <TooltipMui title={tooltipHTML}>
-        <IconButton>
-          <DeleteIcon />
-        </IconButton>
-      </TooltipMui>
-
-      <TooltipMui title={'DIV in paragraph'}>
-        <p>DIV</p>
-      </TooltipMui>
+        <TooltipMui title={tooltipHTML} leaveDelay={600}>
+          <IconButton>
+            <DeleteIcon />
+          </IconButton>
+        </TooltipMui>
+      </div>
     </Page>
   );
 }
