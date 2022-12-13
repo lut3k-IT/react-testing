@@ -1,4 +1,5 @@
 import { Tooltip } from '@mui/material';
+import React from 'react';
 
 export default function TooltipMui({
   children,
@@ -8,7 +9,7 @@ export default function TooltipMui({
 }) {
   return (
     <Tooltip title={title} placement={placement} arrow={arrow}>
-      {children}
+      <span>{children}</span>
     </Tooltip>
   );
 }

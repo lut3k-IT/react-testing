@@ -1,6 +1,6 @@
 import { IconButton } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { TooltipMui } from 'components';
+import { Page, TooltipMui } from 'components';
 
 export default function TooltipPage() {
   const tooltipHTML = (
@@ -12,17 +12,22 @@ export default function TooltipPage() {
   );
 
   return (
-    <>
+    <Page>
       <TooltipMui title={'Click this button ⚠️'}>
         <IconButton>
           <DeleteIcon />
         </IconButton>
       </TooltipMui>
+
       <TooltipMui title={tooltipHTML}>
         <IconButton>
           <DeleteIcon />
         </IconButton>
       </TooltipMui>
-    </>
+
+      <TooltipMui title={'DIV in paragraph'}>
+        <p>DIV</p>
+      </TooltipMui>
+    </Page>
   );
 }
